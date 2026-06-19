@@ -7,14 +7,16 @@ export const EditingToggle: React.FC<IEditingToggleProps> = ({
   onChange,
 }: IEditingToggleProps): JSX.Element => {
   return (
-    <label className='flex items-center gap-2 cursor-pointer'>
+    <label className="mechanical-toggle gap-3">
       <input
-        type='checkbox'
+        type="checkbox"
         checked={checked}
         onChange={(event: React.ChangeEvent<HTMLInputElement>): void => onChange(event.target.checked)}
-        className='cursor-pointer'
       />
-      <span>{label}</span>
+      <span className="mechanical-toggle-track">
+        <span className="mechanical-toggle-thumb" />
+      </span>
+      <span className="label-plate text-xs">{label}</span>
     </label>
   )
 }

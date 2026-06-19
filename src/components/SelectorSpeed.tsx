@@ -5,10 +5,11 @@ export const SelectorSpeed: React.FC<ISelectorSpeedProps> = ({
   value,
 }: ISelectorSpeedProps): JSX.Element => {
   return (
-    <label className="cursor-pointer group transition flex items-center justify-center ease-in bg-gray-700 h-8 hover:bg-gray-800 rounded px-2 shadow-md disabled:opacity-50">
+    <label className="vintage-btn flex items-center gap-2 cursor-pointer !py-1.5">
+      <span className="text-brass-muted text-[0.65rem] tracking-widest">SPD</span>
       <select
-        className="bg-gray-700 cursor-pointer group-hover:bg-gray-800 ease-in transition"
-        aria-label='speed selector'
+        className="vintage-select"
+        aria-label="speed selector"
         value={value}
         onChange={onChange}
       >

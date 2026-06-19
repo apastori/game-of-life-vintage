@@ -6,18 +6,12 @@ export const SeedRandomButton: React.FC<ISeedButtonProps> = ({
   children
 }: ISeedButtonProps): JSX.Element => {
   return (
-    <React.Fragment>
-      <button
-        onClick={onClick}
-        style={{
-          paddingRight: '1rem !important',
-          paddingLeft: '1rem !important'
-        }}
-        className='transition ease-in flex items-center justify-center h-8 rounded-full px-4 shadow-md bg-gray-700 hover:bg-gray-800'
-      >
-        Random
-        {children}
-      </button>
-    </React.Fragment>
+    <button
+      onClick={onClick}
+      className="vintage-btn"
+    >
+      Random
+      {children}
+    </button>
   )
 }
